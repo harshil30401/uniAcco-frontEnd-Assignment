@@ -1,0 +1,398 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;1,200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
+body{
+    font-family: Poppins;
+    margin-top: 0;
+    cursor: default;
+    orientation: portrait;
+}
+
+/* First Section */
+
+#hiddenBars{
+    display: none;
+}
+
+nav{
+    background-color: white;
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+    position: fixed;
+    border-bottom: 2px solid rgb(231, 231, 231);
+}
+
+.nav-content{
+    display: flex;
+}
+
+
+.logo{
+    display: flex;
+    cursor: pointer;
+}
+
+.logo img{
+    padding-top: 20px;
+    padding-left: 20px;
+}
+.logo h2{
+    padding: 3px;
+    color: red;
+    font-weight: bolder;
+}
+
+
+.secondPart {
+    margin-left: 65%;
+    align-self: auto;
+    display: flex;
+}
+nav .secondPart p{
+    align-self: center;
+    font-weight: bold;
+    padding: 10px;
+}
+.globe{
+    align-self: center;
+    padding: 25px;
+    cursor: pointer;
+}
+
+.login{
+    cursor: pointer;
+    align-self: center;
+    border: 2px solid rgb(218, 215, 215);
+    /* margin: 5px; */
+    margin-right: 5px;
+    border-radius: 25px;
+    padding: 8px;
+    transition: 0.3s all ease;
+}
+.login:hover{
+    cursor: pointer;
+    box-shadow: 3px 3px 3px rgb(189, 187, 187);
+}
+
+
+.secondPart .login img{
+    margin-left: 10px;
+}
+
+
+
+
+
+
+
+/* Second Section */
+
+.section2{
+    padding-top: 95px;
+
+}
+.section2 h1{
+    margin-left: 60px;
+}
+.imgWindow{
+    display: flex;
+    margin-left: 55px;
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+}
+.imgCard{
+    padding: 5px;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+.imgCard img{
+    /* height: 50em; */
+    width: 530px;
+    border-radius: 10px;
+}
+
+.imgContent{
+    position: absolute;
+    margin-left: 20px;
+    color: white;
+}
+.imgContent pre{
+    font-weight: bold;
+    font-family: Poppins;
+    font-size: x-large;
+}
+.imgContent button{
+    width: 100px;
+    height: 30px;
+    font-family: Poppins;
+    font-weight: 400;
+    border-color: white;
+    margin-top: 100px;
+    border-radius: 5px;
+    transition: 0.5s ease all;
+}
+.imgContent button:hover{
+    cursor: pointer;
+    background-color: rgb(181, 179, 179);
+}
+
+
+.section21{
+    display: flex;
+    margin-top: 15px;
+
+}
+.section21 .horizontalButtons1{
+    margin-left: 50px;
+    display: flex;
+}
+.section21 .horizontalButtons1 .hButton{
+    cursor: pointer;
+    align-items: center;
+    color: rgb(70, 70, 70);
+    margin: 5px;
+    border: 2px solid rgb(232, 229, 229);
+    padding: 7px;
+    border-radius: 20px;
+    font-size: small;
+    transition: 0.3s ease all;
+}
+.section21 .horizontalButtons1 .hButton:hover{
+    border-color: black;
+    transition: 0.3s ease all;
+}
+
+/* #pipe{
+    margin: 10px;
+    color: rgb(232, 229, 229);;
+} */
+
+.section21 .horizontalButtons2{
+    display: flex;
+}
+.section21 .horizontalButtons2 .hButton{
+    cursor: pointer;
+    background-color: rgb(232, 229, 229);
+    margin: 5px;
+    padding: 7px;
+    border-radius: 20px;
+    font-size: small;
+    transition: 0.3s ease all;
+}
+
+
+
+
+
+
+
+
+
+
+/* Third section */
+
+.section3{
+    padding-top: 60px;
+    margin-left: 50px;
+} 
+.section3 h4{ 
+    margin: 10px;
+}
+
+.window{
+    padding: 5px;
+    display: flex;
+    scroll-behavior: smooth;
+    overflow-x: scroll;
+}
+.card{
+    cursor: pointer;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+.card .like{
+    cursor: pointer;
+    position: absolute;
+    top: 15px;
+    color: rgb(222, 202, 176);
+    right: 20px;
+    transition: 0.3s all;
+}
+.card .like:hover{
+    color: rgb(148, 135, 135);
+}
+.card img {
+    alt: "Unable to load picture!";
+    width: 190px; 
+    height: 240px;
+    border-radius: 15px;
+    padding: 5px;
+}
+.card p{
+    margin: 10px;
+}
+.card .rating {
+    font-size: small;
+    margin: 7px;
+    display: flex;
+}
+.rating i{
+    margin: 2px;
+}
+
+.card .rating div{
+    color: gray;
+    margin: 3px;
+    font-size: smaller;
+}
+.card p{
+    font-size: 15px;
+}
+
+#rupee{
+    padding: 3px;
+}
+
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+    width: 10px;
+    height: 15px;
+}
+  
+::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+  
+}
+   
+::-webkit-scrollbar-thumb {
+    background: rgb(185, 184, 184);
+    border: 2px solid transparent;
+    border-radius: 8px;
+    background-clip: padding-box; 
+}
+  
+::-webkit-scrollbar-thumb:hover {
+    background: rgb(138, 138, 138); 
+}
+
+
+
+
+@media all and (max-width : 620px) {
+    
+    /* Section 2 */
+
+    .imgWindow {
+        display: inline-block;
+    }
+
+    .section21{
+        display: inline-block;
+    }
+    .section21 .horizontalButtons2{
+        margin-left: 50px;
+    }
+
+
+
+    /* Section 3 */
+
+    .window{
+        padding: 5px;
+        margin-right: 0;
+        display: inline-block;
+        justify-content: space-between;
+        scroll-behavior: smooth;
+        overflow-x: scroll;
+    }
+
+    .card .like{
+        position: fixed;
+    }
+
+}
+
+@media all and (max-width:900px) {
+
+    /* Section 1 */
+
+    .secondPart{
+        display: none;
+    }
+    #hiddenBars{
+        display: block;
+        cursor: pointer;
+        align-self: center;
+        /* margin: 5px; */
+        margin-left: 70%;
+        border-radius: 25px;
+        padding: 8px;
+        transition: 0.3s all ease;
+    }
+    #hiddenBars:hover{
+        animation: rotation 0.2s reverse linear;
+    }
+
+    @keyframes rotation {
+        from {
+            -webkit-transform: rotate(0deg);
+            }
+        to {
+            -webkit-transform: rotate(180deg);
+        }
+    }
+    nav .login{
+        margin-right: 60%;
+    }
+   
+}
+
+
+
+/* 
+.testingSecondPart{
+    display: flex;
+    padding: 10px;
+}
+
+.testingSecondPart p{
+    border: 2px solid black;
+}
+.testingSecondPart .testingGlobe{
+    border: 2px solid black;
+    align-self: center;
+}
+.testingSecondPart .testingLogin{
+    
+    align-self: center;
+    border: 2px solid black;
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
